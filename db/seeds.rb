@@ -20,4 +20,10 @@ elsif Rails.env.production?
   Book.create(title: "production 3")
   Book.create(title: "production 4")
   Book.create(title: "production 5")
+elsif Rails.env.test?
+  Book.create(title: "test 1")
+  Book.create(title: "test 2")
+  Book.create(title: "test 3")
+  Book.create(title: "test 4")
+  Book.create(title: "test 5")
 end
