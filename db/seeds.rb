@@ -8,8 +8,8 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-Book.create(title: "test 1", author: "author 1")
-Book.create(title: "test 2", author: "author 2")
-Book.create(title: "test 3", author: "author 3")
-Book.create(title: "test 4", author: "author 4")
-Book.create(title: "test 5", author: "author 5")
+Book.create(title: "test 1")
+Book.create(title: "test 2")
+Book.create(title: "test 3")
+Book.create(title: "test 4")
+Book.create(title: "test 5")
