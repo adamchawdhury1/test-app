@@ -96,6 +96,5 @@ production:
     database: test_app_production_queue
     migrations_paths: db/queue_migrate
   cable:
-    <<: *primary_production
-    database: test_app_production
-    migrations_paths: db/cable_migrate
+    <<: *default
+    url: <%= ENV["DATABASE_URL"] %>
