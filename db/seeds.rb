@@ -8,8 +8,16 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-Book.create(title: "test 1")
-Book.create(title: "test 2")
-Book.create(title: "test 3")
-Book.create(title: "test 4")
-Book.create(title: "test 5")
+if Rails.env.development?
+  Book.create(title: "development 1")
+  Book.create(title: "development 2")
+  Book.create(title: "development 3")
+  Book.create(title: "development 4")
+  Book.create(title: "development 5")
+elsif Rails.env.production?
+  Book.create(title: "production 1")
+  Book.create(title: "production 2")
+  Book.create(title: "production 3")
+  Book.create(title: "production 4")
+  Book.create(title: "production 5")
+end
