@@ -81,10 +81,10 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  url: <%= ENV["DATABASE_URL"] %>
   primary: &primary_production
     <<: *default
     database: test_app_production
+    url: <%= ENV["DATABASE_URL"] %>
     username: test_app
     password: <%= ENV["TEST_APP_DATABASE_PASSWORD"] %>
   cache:
